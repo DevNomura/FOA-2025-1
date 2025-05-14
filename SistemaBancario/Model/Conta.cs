@@ -26,7 +26,7 @@ namespace SistemaBancario.Model
                 throw new ArgumentNullException("O cliente não pode ser nulo.");
             Titular = cliente;
         }
-        public void Depositar(decimal valor)
+        public virtual void Depositar(decimal valor)
         {
             if (valor <= 0)
                 throw new ArgumentException("O valor do depósito deve ser maior que zero.");

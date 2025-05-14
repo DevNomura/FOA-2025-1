@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaBancario.Model
 {
-    class ContaEspecial : Conta
+    public class ContaEspecial : Conta
     {
         public decimal Limite { get; private set; }
         public ContaEspecial(decimal saldo) : base(saldo)
